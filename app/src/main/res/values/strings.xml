@@ -20,4 +20,7 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="menu_psg">PSG</string>
+    <string name="confirma_senha">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="name">Name</string>
 </resources>

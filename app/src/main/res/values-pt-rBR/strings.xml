@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MenuLateral_3A_3B_2021</string>
+    <string name="navigation_drawer_open">Abrir navegação lateral</string>
+    <string name="navigation_drawer_close">Fechar navegação lateral</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Cabeçalho de Navegação</string>
+    <string name="action_settings">Configurações</string>
+    <string name="menu_home">Início</string>
+    <string name="menu_gallery">Galeria de Fotos</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">E-mail</string>
+    <string name="prompt_password">Senha</string>
+    <string name="action_sign_in">Entrar ou Registrar-se</string>
+    <string name="action_sign_in_short">Entrar</string>
+    <string name="welcome">Bem-vindo!</string>
+    <string name="invalid_username">Nome de usuário inválido!</string>
+    <string name="invalid_password">A senha precisa ter mais de 5 caracteres!</string>
+    <string name="login_failed">Falha ao Entrar</string>
+    <string name="menu_psg">PSG</string>
+    <string name="confirma_senha">Confirme a Senha</string>
+    <string name="register">Registrar-se</string>
+    <string name="name">Nome</string>
+</resources>

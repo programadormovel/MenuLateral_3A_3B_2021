@@ -6,6 +6,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.NavHostController;
+import androidx.navigation.fragment.NavHostFragment;
 
 import android.content.Context;
 import android.location.GnssAntennaInfo;
@@ -44,6 +47,7 @@ public class LoginFragment extends Fragment {
                              @Nullable Bundle savedInstanceState) {
 
         binding = FragmentLoginBinding.inflate(inflater, container, false);
+
         return binding.getRoot();
 
     }
@@ -56,6 +60,8 @@ public class LoginFragment extends Fragment {
 
         final EditText usernameEditText = binding.username;
         final EditText passwordEditText = binding.password;
+        final TextView botaoRegistro = binding.btnRegistrar;
+
         loginButton = binding.login;
         final ProgressBar loadingProgressBar = binding.loading;
 
@@ -134,8 +140,14 @@ public class LoginFragment extends Fragment {
                 loginViewModel.login(usernameEditText.getText().toString(),
                         passwordEditText.getText().toString());
 
+            }
+        });
 
-
+        botaoRegistro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                NavHostFragment.findNavController(LoginFragment.this)
+                        .navigate(R.id.action_nav_psg_to_nav_registro);
             }
         });
     }
